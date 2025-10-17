@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "RU");
+
+	int num1;
+	int num2;
+	char operation;
+
+	cout << "Введите первое число ";
+
+	cin >> num1;
+
+	cout << "Введите операцию ";
+
+	cin >> operation;
+
+	cout << "Введите второе число ";
+
+	cin >> num2;
+
+	if (operation == '+') {
+		cout << (num1 + num2);
+	}
+	else if (operation == '-') {
+		cout << (num1 - num2);
+	}
+	else if (operation == '%') {
+		cout << (num1 % num2);
+	}
+	else if (operation == '*') {
+		cout << (num1 * num2);
+	}
+	else if (operation == '/') {
+		if (num2 == 0) {
+			cout << "на 0 делить нельзя";
+		}
+		else {
+			cout << (num1 / num2);
+		}
+
+    }
+}
